@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0f14">
+<title>Bão Sa Mạc — Liên Minh 2308</title>
+<style>
+:root{--bg:#080b10;--panel:#10161e;--panel2:#151d27;--text:#edf2f7;--muted:#9aa8b8;--line:#26313e;--accent:#e0a83b;--red:#e05a5a;--green:#61c28b;--blue:#65a9e8}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 50% -10%,#27313b 0,#0b1016 34%,var(--bg) 70%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:1050px;margin:auto;padding:0 18px}
+header{min-height:430px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+header:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,rgba(224,168,59,.08),transparent 65%);transform:skewX(-18deg)}
+.hero{position:relative;padding:70px 0 55px;width:100%}.badge{display:inline-flex;padding:6px 11px;border:1px solid #4a5664;background:#111821;border-radius:999px;color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(38px,8vw,72px);line-height:.98;margin:18px 0 14px;letter-spacing:-.045em}.hero p{max-width:700px;color:var(--muted);font-size:18px;margin:0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:#121923;font-weight:750}.btn.primary{background:var(--accent);border-color:var(--accent);color:#15110a}
+nav{position:sticky;top:0;z-index:20;background:rgba(8,11,16,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}nav .nav{display:flex;gap:7px;overflow:auto;padding:9px 0}nav a{white-space:nowrap;padding:8px 11px;color:var(--muted);border-radius:8px;font-size:13px}nav a:hover{background:#151d27;color:var(--text)}
+main{padding:34px 0 70px}section{scroll-margin-top:70px;margin:0 0 42px}h2{font-size:28px;margin:0 0 17px;letter-spacing:-.02em}h3{margin:0 0 7px;font-size:18px}.lead{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:18px}.card p,.card li{color:#bac5d0}.num{font-size:28px;font-weight:900;color:var(--accent)}.tag{display:inline-block;font-size:11px;font-weight:800;padding:3px 7px;border:1px solid var(--line);border-radius:5px;color:var(--muted);margin-bottom:8px}
+.timeline{display:grid;gap:10px}.phase{display:grid;grid-template-columns:125px 1fr;gap:15px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.time{font-weight:900;color:var(--accent)}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#18212c;color:#dbe3eb;font-size:13px}td{color:#bdc8d3}tr:last-child td{border-bottom:0}
+ul,ol{padding-left:21px}.notice{border-left:4px solid var(--accent);padding:15px 17px;background:#15150f;border-radius:0 10px 10px 0}.danger{border-left-color:var(--red)}.success{border-left-color:var(--green)}
+.command{display:grid;gap:8px}.cmd{padding:12px 14px;background:#0d131a;border:1px solid var(--line);border-radius:9px;font-weight:700}.red{color:var(--red)}.green{color:var(--green)}.blue{color:var(--blue)}
+footer{border-top:1px solid var(--line);padding:25px 0 45px;color:var(--muted);font-size:13px}
+@media(max-width:720px){.grid,.grid2{grid-template-columns:1fr}.phase{grid-template-columns:1fr;gap:4px}header{min-height:390px}h1{font-size:48px}.hero p{font-size:16px}table{font-size:13px}th,td{padding:9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <span class="badge">LAST WAR • SERVER 2308</span>
+    <h1>🏜️ BÃO SA MẠC</h1>
+    <p><strong>Hướng dẫn & kế hoạch tham chiến của Liên Minh 2308.</strong><br>Chiếm nhà • Giữ nhà • Hỗ trợ đồng đội • Nghe chỉ huy.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#ke-hoach">Xem kế hoạch</a>
+      <a class="btn" href="#nhom">Nhiệm vụ 5 nhóm</a>
+      <a class="btn" href="#luat">Luật bắt buộc</a>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap nav">
+<a href="#ke-hoach">⏱️ Kế hoạch</a><a href="#cong-trinh">🏢 Công trình</a><a href="#nhom">👥 5 nhóm</a><a href="#chien-dau">⚔️ Chiến đấu</a><a href="#diem">🎯 Điểm</a><a href="#lien-lac">📢 Liên lạc</a><a href="#luat">🚨 Luật</a>
+</div></nav>
+
+<main class="wrap">
+<section id="ke-hoach">
+<h2>⏱️ Kế hoạch theo giai đoạn</h2>
+<div class="timeline">
+<div class="phase"><div class="time">-5 → 0 PHÚT</div><div><h3>Chuẩn bị</h3><ul><li>Vào chiến trường sớm.</li><li>Đứng đúng vị trí nhóm.</li><li>Chuẩn bị dịch chuyển tức thời.</li><li>Kiểm tra đội hình và chờ lệnh.</li></ul></div></div>
+<div class="phase"><div class="time">0 → 10 PHÚT</div><div><h3>Chiếm vòng ngoài</h3><ol><li>Chiếm và giữ Xưởng lọc dầu.</li><li>Chiếm Bệnh viện dã chiến.</li><li>Kiểm soát Trung tâm công nghệ và Trung tâm thông tin.</li><li>Duy trì phòng thủ.</li><li>Chuẩn bị lực lượng cho trung tâm.</li></ol></div></div>
+<div class="phase"><div class="time">TỪ PHÚT 10</div><div><h3>🔥 Trung tâm mở</h3><ul><li>Tập trung lực lượng mạnh để tranh <strong>Giếng hạt nhân</strong>.</li><li>Chiếm Xưởng vũ khí hoặc Xưởng lính đánh thuê tùy tình hình.</li><li>Không bỏ toàn bộ công trình vòng ngoài.</li></ul></div></div>
+<div class="phase"><div class="time">TỪ PHÚT 13</div><div><h3>Điểm phụ & hỗ trợ</h3><ul><li>Giếng dầu xuất hiện.</li><li>Lực chiến thấp hoặc không cần tiếp viện có thể thu thập Giếng dầu và Hộp tiếp tế.</li><li>Lực chiến cao tiếp tục tranh và giữ công trình quan trọng.</li></ul></div></div>
+<div class="phase"><div class="time">5 PHÚT CUỐI</div><div><h3>🔥 Giữ điểm</h3><ul><li>Không bỏ Giếng hạt nhân nếu đang kiểm soát được.</li><li>Bảo vệ các công trình đang tạo điểm.</li><li>Nếu đang thua, tập trung vào công trình có giá trị điểm cao của đối phương.</li><li>Không tự ý mở mục tiêu mới.</li></ul></div></div>
+</div>
+</section>
+
+<section id="cong-trinh">
+<h2>🏢 Các công trình</h2>
+<div class="grid">
+<div class="card"><span class="tag">TRỌNG TÂM</span><h3>☢️ Giếng hạt nhân</h3><p>Mục tiêu trung tâm quan trọng. Khi mở, lực lượng mạnh ưu tiên tranh và giữ theo lệnh chỉ huy.</p></div>
+<div class="card"><span class="tag">VÒNG NGOÀI</span><h3>🛢️ Xưởng lọc dầu</h3><p>Ưu tiên chiếm và giữ từ đầu trận; không nên để mất nhà đã chiếm nếu vẫn có thể phòng thủ.</p></div>
+<div class="card"><span class="tag">HỖ TRỢ</span><h3>🏥 Bệnh viện dã chiến</h3><p>Giúp duy trì khả năng chiến đấu và là vị trí phòng thủ quan trọng.</p></div>
+<div class="card"><span class="tag">CƠ ĐỘNG</span><h3>🔬 Trung tâm công nghệ</h3><p>Kiểm soát để hỗ trợ khả năng dịch chuyển và điều phối chiến trường.</p></div>
+<div class="card"><span class="tag">ĐIỂM / BUFF</span><h3>🏢 Trung tâm thông tin</h3><p>Giá trị chiến thuật hỗ trợ việc tạo điểm từ hệ thống công trình.</p></div>
+<div class="card"><span class="tag">TRUNG TÂM</span><h3>⚔️ Xưởng vũ khí</h3><p>Công trình hỗ trợ sức mạnh chiến đấu; ưu tiên theo tình hình và lệnh chỉ huy.</p></div>
+<div class="card"><span class="tag">TRUNG TÂM</span><h3>💀 Xưởng lính đánh thuê</h3><p>Công trình có tác động lên sức mạnh Hero đối phương; tranh chấp khi phù hợp.</p></div>
+<div class="card"><span class="tag">ĐIỂM PHỤ</span><h3>🛢️ Giếng dầu</h3><p>Phù hợp để người ít tham gia giao tranh kiếm thêm điểm khi tình hình cho phép.</p></div>
+<div class="card"><span class="tag">ĐIỂM PHỤ</span><h3>📦 Hộp tiếp tế</h3><p>Nhặt khi an toàn. Không bỏ công trình quan trọng chỉ để chạy theo Hộp tiếp tế.</p></div>
+</div>
+</section>
+
+<section id="nhom">
+<h2>👥 Nhiệm vụ 5 nhóm</h2>
+<table>
+<thead><tr><th>Nhóm</th><th>Nhiệm vụ chính</th><th>Khi trung tâm mở</th></tr></thead>
+<tbody>
+<tr><td><strong>🟦 Nhóm 1</strong><br>Phòng thủ</td><td>Chiếm/giữ Bệnh viện dã chiến; hỗ trợ công trình vòng ngoài.</td><td>Tiếp viện nơi bị ép theo lệnh.</td></tr>
+<tr><td><strong>🟩 Nhóm 2</strong><br>Phòng thủ & hỗ trợ</td><td>Giữ Bệnh viện còn lại; bảo vệ công trình đang kiểm soát.</td><td>Di chuyển tới khu vực bị tấn công.</td></tr>
+<tr><td><strong>🟥 Nhóm 3</strong><br>Tấn công</td><td>Tranh Xưởng lọc dầu và Trung tâm công nghệ.</td><td>Hỗ trợ Giếng hạt nhân/khu trung tâm theo lệnh.</td></tr>
+<tr><td><strong>🟨 Nhóm 4</strong><br>Tấn công</td><td>Tranh Xưởng lọc dầu còn lại và Trung tâm thông tin.</td><td>Ưu tiên Xưởng vũ khí/Xưởng lính đánh thuê theo lệnh.</td></tr>
+<tr><td><strong>🟪 Nhóm 5</strong><br>Cơ động</td><td>Không cố định; hỗ trợ nơi đang bị ép, đánh nhà trống, nhặt Box an toàn.</td><td>Tiếp viện Silo và xử lý tình huống phát sinh.</td></tr>
+</tbody></table>
+</section>
+
+<section id="chien-dau">
+<h2>⚔️ Quy tắc chiến đấu</h2>
+<div class="grid2">
+<div class="card"><h3>🎯 Đánh có mục tiêu</h3><p>Trước khi đánh, xem công trình có quan trọng không, có đồng đội hỗ trợ không và sau khi chiếm có giữ được không.</p></div>
+<div class="card"><h3>🚀 Teleport đúng lúc</h3><p>Đến đúng khu vực cần hỗ trợ thay vì mất thời gian di chuyển. Đặc biệt quan trọng ở cuối trận.</p></div>
+<div class="card"><h3>🛡️ Giữ nhà</h3><p>Chiếm được rồi mất ngay không tạo lợi thế lâu dài. Khi đã có nhà, ưu tiên phòng thủ nếu chỉ huy yêu cầu.</p></div>
+<div class="card"><h3>🤝 Đánh theo đội</h3><p>Không tự ý tách nhóm, không tự mở nhiều rally làm phân tán lực lượng.</p></div>
+</div>
+<div class="notice danger" style="margin-top:14px"><strong>❗ Không tự ý lao vào đánh.</strong> Một cuộc tấn công chỉ có giá trị khi phù hợp với mục tiêu chung của liên minh.</div>
+</section>
+
+<section id="diem">
+<h2>🎯 Cách kiếm điểm</h2>
+<div class="grid">
+<div class="card"><div class="num">01</div><h3>Chiếm công trình</h3><p>Ưu tiên các công trình quan trọng theo kế hoạch.</p></div>
+<div class="card"><div class="num">02</div><h3>Giữ công trình</h3><p>Nhà đang tạo điểm cần được bảo vệ.</p></div>
+<div class="card"><div class="num">03</div><h3>Hạ quân địch</h3><p>Đánh có tổ chức; không truy đuổi vô nghĩa.</p></div>
+<div class="card"><div class="num">04</div><h3>📦 Hộp tiếp tế</h3><p>Thu thập khi an toàn.</p></div>
+<div class="card"><div class="num">05</div><h3>🛢️ Giếng dầu</h3><p>Phù hợp với người không cần đứng tuyến đầu.</p></div>
+<div class="card"><div class="num">06</div><h3>🤝 Hỗ trợ</h3><p>Tiếp viện đúng lúc giúp liên minh giữ điểm.</p></div>
+</div>
+</section>
+
+<section id="lien-lac">
+<h2>📢 Câu lệnh liên lạc mẫu</h2>
+<div class="command">
+<div class="cmd red">🔴 Giếng hạt nhân bị đánh – cần hỗ trợ ngay.</div>
+<div class="cmd green">🟢 Xưởng lọc dầu bên trái đang trống – Nhóm 3 chiếm.</div>
+<div class="cmd red">🔴 Địch tập trung 5 đội ở Bệnh viện dã chiến.</div>
+<div class="cmd blue">🟡 Xưởng vũ khí đã mở – chuyển lực lượng sang khu trung tâm.</div>
+<div class="cmd blue">🔵 Không cần thêm quân ở Giếng hạt nhân – giữ vị trí.</div>
+<div class="cmd">🟠 Nhóm 5 cơ động đến hỗ trợ Xưởng lọc dầu phía phải.</div>
+<div class="cmd">🟣 Công trình đã chiếm – chuyển sang phòng thủ.</div>
+<div class="cmd red">⚠️ Không truy đuổi – giữ công trình và chờ lệnh.</div>
+</div>
+</section>
+
+<section id="luat">
+<h2>🚨 Luật bắt buộc</h2>
+<div class="card">
+<ol>
+<li>Không tự ý tách nhóm.</li>
+<li>Không tự ý tranh mục tiêu khác khi chỉ huy đã ra lệnh.</li>
+<li>Luôn quan sát bản đồ.</li>
+<li>Báo ngay khi công trình bị tấn công hoặc địch tập trung quân.</li>
+<li>Giữ công trình quan trọng quan trọng hơn truy đuổi.</li>
+<li>Lực chiến thấp ưu tiên phòng thủ, Hộp tiếp tế và Giếng dầu khi an toàn.</li>
+<li>Lực chiến cao ưu tiên Giếng hạt nhân và công trình trung tâm.</li>
+<li>Muốn đổi mục tiêu: chờ lệnh hoặc xác nhận từ chỉ huy.</li>
+</ol>
+</div>
+<div class="notice success" style="margin-top:14px"><strong>📌 NHỚ KỸ:</strong> Chiếm nhà – giữ nhà – hỗ trợ đồng đội – nghe chỉ huy.</div>
+</section>
+
+<section>
+<h2>🏆 Tư duy chiến thắng</h2>
+<div class="grid2">
+<div class="card"><h3>Không phải cuộc thi kill</h3><p>Mục tiêu chính là tạo và bảo vệ Điểm chiến trường cho liên minh.</p></div>
+<div class="card"><h3>Ai cũng có nhiệm vụ</h3><p>Người mạnh tranh công trình lớn; người trung bình giữ nhà; người yếu hỗ trợ, nhặt Box và thu thập Giếng dầu khi phù hợp.</p></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">Liên Minh 2308 • Bão Sa Mạc • Tài liệu nội bộ liên minh<br><span>Hãy ưu tiên lệnh chỉ huy trực tiếp nếu kế hoạch trong trận được điều chỉnh.</span></div></footer>
+</body>
+</html>
