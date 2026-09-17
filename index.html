@@ -9,31 +9,24 @@
 body{margin:0;background:#090b0e;color:#f1f1f1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
 header{background:linear-gradient(135deg,#17130d,#30200d);border-bottom:1px solid #9b6d24}
 .wrap{max-width:1050px;margin:auto;padding:0 14px}
-header .wrap{padding-top:18px;padding-bottom:16px}
-.brand{font-size:12px;font-weight:900;letter-spacing:.12em;color:#e4b65b}
-h1{font-size:30px;margin:5px 0 4px;font-weight:950}
-.sub{color:#bdb7ad;font-size:13px;line-height:1.45}
+header .wrap{padding:18px 14px 16px}.brand{font-size:12px;font-weight:900;letter-spacing:.12em;color:#e4b65b}
+h1{font-size:30px;margin:5px 0 4px;font-weight:950}.sub{color:#bdb7ad;font-size:13px;line-height:1.45}
 nav{display:flex;gap:7px;overflow:auto;padding:10px 14px;background:#111418;border-bottom:1px solid #282c31;position:sticky;top:0;z-index:5}
 nav a{white-space:nowrap;text-decoration:none;color:#ddd;background:#1b1f24;border:1px solid #353a40;border-radius:10px;padding:9px 12px;font-size:12px;font-weight:800}
-section{padding:18px 0}
-h2{font-size:20px;margin:0 0 10px;color:#e9b951}
+section{padding:20px 0}h2{font-size:20px;margin:0 0 10px;color:#e9b951}
 .card{background:#14171b;border:1px solid #30353b;border-radius:15px;padding:15px;margin:10px 0}
-.card p{line-height:1.6;margin:7px 0;color:#d9d9d9}
-.map{background:#15100b;border:2px solid #8d6323;border-radius:16px;padding:6px;overflow:hidden}
-.map img{display:block;width:100%;border-radius:11px}
-.muted{color:#92979d;font-size:12px;line-height:1.5}
-.time{display:grid;gap:9px}
-.phase{padding:13px;border-radius:13px;background:#15181c;border-left:4px solid #d7a63e}
-.phase b{display:block;color:#f0c05b;margin-bottom:4px}
-.teams{display:grid;grid-template-columns:1fr;gap:9px}
-.team{border-radius:13px;padding:14px;background:#15181c;border:1px solid #383d44;cursor:pointer}
+.card p{line-height:1.65;margin:7px 0;color:#ddd}.card ul,.card ol{line-height:1.7;padding-left:22px;color:#ddd}.card li{margin:5px 0}
+.intro{font-size:15px;line-height:1.7}
+.map{background:#15100b;border:2px solid #8d6323;border-radius:16px;padding:6px;overflow:hidden}.map img{display:block;width:100%;border-radius:11px}
+.muted{color:#92979d;font-size:12px;line-height:1.5}.time{display:grid;gap:10px}
+.phase{padding:14px;border-radius:13px;background:#15181c;border-left:4px solid #d7a63e}.phase b{display:block;color:#f0c05b;margin-bottom:5px}
+.teams{display:grid;grid-template-columns:1fr;gap:9px}.team{border-radius:13px;padding:14px;background:#15181c;border:1px solid #383d44;cursor:pointer}
 .team b{font-size:16px}.team small{display:block;color:#aaa;margin-top:4px}.team.active{border-color:#e0ad42;box-shadow:0 0 0 1px #e0ad42 inset}
-.detail{display:none;margin-top:10px}.detail.show{display:block}
-.detail h3{margin:0 0 6px;color:#f0c05b}.detail ul,.card ul{padding-left:20px;line-height:1.65;color:#ddd}
-.buildings{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.building{padding:12px;border-radius:12px;background:#171a1e;border:1px solid #353a40;color:#eee;cursor:pointer;font-weight:800;text-align:left}
-.building:hover,.team:hover{border-color:#c99738}
-.rule{display:flex;gap:9px;margin:9px 0;line-height:1.5}.rule span{color:#55d77b;font-weight:900}
+.detail{display:none;margin-top:10px}.detail.show{display:block}.detail h3{margin:0 0 7px;color:#f0c05b}
+.buildings{display:grid;grid-template-columns:1fr 1fr;gap:8px}.building{padding:12px;border-radius:12px;background:#171a1e;border:1px solid #353a40;color:#eee;cursor:pointer;font-weight:800;text-align:left}
+.building:hover,.team:hover{border-color:#c99738}.rule{display:flex;gap:9px;margin:9px 0;line-height:1.55}.rule span{color:#55d77b;font-weight:900}
+.command{padding:11px 13px;background:#111419;border-radius:10px;border:1px solid #30353b;margin:7px 0;line-height:1.45}
+.quote{font-size:17px;font-weight:900;color:#f0c05b;text-align:center;padding:14px}
 footer{border-top:1px solid #292d32;color:#777;text-align:center;padding:20px 14px;font-size:11px}
 @media(min-width:700px){.teams{grid-template-columns:repeat(5,1fr)}.buildings{grid-template-columns:repeat(3,1fr)}}
 </style>
@@ -42,152 +35,112 @@ footer{border-top:1px solid #292d32;color:#777;text-align:center;padding:20px 14
 <header><div class="wrap">
 <div class="brand">LAST WAR • TTYN-sv 2308</div>
 <h1>🏜️ BÃO SA MẠC</h1>
-<div class="sub">Bản đồ chiến thuật & hướng dẫn tác chiến của TTYN-sv 2308</div>
+<div class="sub">KẾ HOẠCH THAM CHIẾN • HƯỚNG DẪN DÀNH CHO TOÀN LIÊN MINH</div>
 </div></header>
-
 <nav>
-<a href="#map">🗺️ Bản đồ</a><a href="#plan">⏱️ Kế hoạch</a><a href="#team">👥 Team</a><a href="#buildings">🏢 Công trình</a><a href="#rules">📌 Quy tắc</a>
+<a href="#intro">📖 Cơ bản</a><a href="#map">🗺️ Bản đồ</a><a href="#plan">⏱️ Kế hoạch</a><a href="#team">👥 Nhóm</a><a href="#combat">⚔️ Chiến đấu</a><a href="#commands">📢 Câu lệnh</a><a href="#rules">🚨 Bắt buộc</a>
 </nav>
 
 <main class="wrap">
+<section id="intro">
+<h2>🏜️ THÔNG BÁO BÃO SA MẠC – KẾ HOẠCH THAM CHIẾN</h2>
+<div class="card intro">
+<p>Bão Sa Mạc là trận chiến <b>20 đấu 20</b>. Mục tiêu chính là <b>chiếm và giữ công trình để kiếm Điểm chiến trường</b>, không chỉ tiêu diệt quân địch. Mọi người ưu tiên nghe chỉ huy, phối hợp theo nhóm và không tự ý tách đội.</p>
+</div>
+</section>
+
 <section id="map">
-<h2>🗺️ Bản đồ Bão Sa Mạc</h2>
+<h2>🗺️ BẢN ĐỒ BÃO SA MẠC</h2>
 <div class="map"><img src="ban-do-bao-sa-mac.png" alt="Bản đồ Bão Sa Mạc TTYN-sv 2308"></div>
-<p class="muted">Bản đồ đã được Việt hóa tên công trình. Khi chiến đấu, luôn đối chiếu vị trí thực tế trên bản đồ trong game.</p>
+<p class="muted">Bản đồ đã được Việt hóa tên công trình. Khi vào trận, luôn đối chiếu vị trí thực tế trên bản đồ trong game.</p>
 </section>
 
 <section id="plan">
-<h2>⏱️ Kế hoạch 30 phút</h2>
+<h2>⏱️ KẾ HOẠCH THEO GIAI ĐOẠN</h2>
 <div class="time">
-<div class="phase"><b>🔵 Giai đoạn 1 — Chuẩn bị (-5 → 0 phút)</b>Vào đúng Team đã được phân công, tập hợp đầy đủ và chờ lệnh. Không tự ý di chuyển sang khu vực khác.</div>
-<div class="phase"><b>🟢 Giai đoạn 2 — 0 → 10 phút</b>Ưu tiên các công trình vòng ngoài: Xưởng Lọc Dầu, Bệnh Viện, Trung Tâm Khoa Học. Mục tiêu là chiếm nhanh và giữ điểm, không sa đà vào truy đuổi.</div>
-<div class="phase"><b>🟠 Giai đoạn 3 — Từ phút 10</b>Khu trung tâm mở. Các Team tấn công chuyển trọng tâm vào Kho Vũ Khí, Hầm Tên Lửa Hạt Nhân, Nhà Máy Lính Thuê và các mục tiêu được chỉ huy gọi.</div>
-<div class="phase"><b>🔴 Giai đoạn 4 — 5 phút cuối</b>Không bỏ công trình đang có điểm chỉ vì một cuộc giao tranh nhỏ. Ưu tiên giữ những mục tiêu đang kiểm soát, tiếp viện điểm nóng và thực hiện đúng lệnh cuối của chỉ huy.</div>
+<div class="phase"><b>Trước trận: -5 đến 0 phút</b><ul><li>Vào chiến trường sớm.</li><li>Đứng đúng vị trí của nhóm.</li><li>Chuẩn bị dịch chuyển tức thời.</li><li>Kiểm tra đội hình và sẵn sàng nhận lệnh.</li></ul></div>
+<div class="phase"><b>Giai đoạn 1: 0 đến 10 phút</b><p>Ưu tiên theo thứ tự:</p><ol><li>Chiếm và giữ Xưởng lọc dầu.</li><li>Chiếm Bệnh viện dã chiến.</li><li>Kiểm soát Trung tâm công nghệ và Trung tâm thông tin.</li><li>Duy trì phòng thủ, không để mất các công trình đã chiếm.</li><li>Chuẩn bị lực lượng cho khu trung tâm.</li></ol></div>
+<div class="phase"><b>Giai đoạn 2: Từ phút 10</b><p>Khu trung tâm mở:</p><ul><li>Tập trung lực lượng mạnh để tranh Giếng hạt nhân.</li><li>Chiếm Xưởng vũ khí hoặc Xưởng lính đánh thuê tùy tình hình.</li><li>Không bỏ toàn bộ công trình vòng ngoài.</li><li>Ưu tiên giữ những công trình đang tạo điểm.</li></ul></div>
+<div class="phase"><b>Giai đoạn 3: Từ phút 13</b><ul><li>Giếng dầu xuất hiện.</li><li>Người có lực chiến thấp hoặc không cần tiếp viện có thể thu thập Giếng dầu và Hộp tiếp tế.</li><li>Người có lực chiến cao tiếp tục tranh và giữ các công trình quan trọng.</li><li>Không bỏ vị trí chiến lược chỉ để chạy theo điểm phụ.</li></ul></div>
+<div class="phase"><b>5 phút cuối</b><ul><li>Tập trung giữ điểm.</li><li>Không bỏ Giếng hạt nhân nếu đang kiểm soát được.</li><li>Bảo vệ Xưởng lọc dầu, Bệnh viện dã chiến và các công trình đang tạo điểm.</li><li>Nếu đang thua, tập trung đánh vào công trình có giá trị điểm cao nhất của đối phương.</li><li>Không tự ý mở mục tiêu mới nếu chưa có lệnh.</li></ul></div>
 </div>
 </section>
 
 <section id="team">
-<h2>👥 Phân chia Team — Chiến thuật TTYN-sv 2308</h2>
-<p class="muted">Mỗi Team giữ đúng nhiệm vụ ban đầu. Khi chỉ huy đổi mục tiêu, ưu tiên lệnh mới nhất.</p>
-
+<h2>👥 NHIỆM VỤ CỦA TỪNG NHÓM</h2>
+<p class="muted">Bấm vào từng nhóm để xem nhiệm vụ. Thành viên mới chỉ cần nhớ đúng nhóm của mình và làm theo phần này.</p>
 <div class="teams">
-<div class="team" onclick="team(this,'t1')"><b>TEAM 1</b><small>Phòng thủ Bắc / bệnh viện</small></div>
-<div class="team" onclick="team(this,'t2')"><b>TEAM 2</b><small>Phòng thủ Nam / hỗ trợ</small></div>
-<div class="team" onclick="team(this,'t3')"><b>TEAM 3</b><small>Tấn công — Khoa Học → Trung tâm</small></div>
-<div class="team" onclick="team(this,'t4')"><b>TEAM 4</b><small>Tấn công — Lọc Dầu → Trung tâm</small></div>
-<div class="team" onclick="team(this,'t5')"><b>TEAM 5</b><small>Cơ động / tiếp viện</small></div>
+<div class="team" onclick="team(this,'t1')"><b>🟦 Nhóm 1</b><small>Phòng thủ</small></div>
+<div class="team" onclick="team(this,'t2')"><b>🟩 Nhóm 2</b><small>Phòng thủ và hỗ trợ</small></div>
+<div class="team" onclick="team(this,'t3')"><b>🟥 Nhóm 3</b><small>Tấn công</small></div>
+<div class="team" onclick="team(this,'t4')"><b>🟨 Nhóm 4</b><small>Tấn công</small></div>
+<div class="team" onclick="team(this,'t5')"><b>🟪 Nhóm 5</b><small>Cơ động</small></div>
 </div>
+<div id="t1" class="card detail"><h3>🟦 Nhóm 1 – Phòng thủ</h3><ul><li>Chiếm và giữ Bệnh viện dã chiến gần vị trí xuất phát.</li><li>Hỗ trợ các công trình vòng ngoài.</li><li>Tiếp viện khi có lệnh.</li></ul></div>
+<div id="t2" class="card detail"><h3>🟩 Nhóm 2 – Phòng thủ và hỗ trợ</h3><ul><li>Chiếm Bệnh viện dã chiến còn lại.</li><li>Bảo vệ các công trình đang kiểm soát.</li><li>Di chuyển ngay đến khu vực bị đối phương tấn công.</li></ul></div>
+<div id="t3" class="card detail"><h3>🟥 Nhóm 3 – Tấn công</h3><ul><li>Tranh Xưởng lọc dầu.</li><li>Tranh Trung tâm công nghệ.</li><li>Từ phút 10, chuyển sang hỗ trợ Giếng hạt nhân hoặc khu trung tâm theo lệnh.</li></ul></div>
+<div id="t4" class="card detail"><h3>🟨 Nhóm 4 – Tấn công</h3><ul><li>Tranh Xưởng lọc dầu còn lại.</li><li>Tranh Trung tâm thông tin.</li><li>Từ phút 10, ưu tiên Xưởng vũ khí hoặc Xưởng lính đánh thuê theo lệnh.</li></ul></div>
+<div id="t5" class="card detail"><h3>🟪 Nhóm 5 – Cơ động</h3><ul><li>Không cố định một vị trí.</li><li>Tiếp viện nơi đang bị đối phương gây sức ép.</li><li>Hỗ trợ Giếng hạt nhân và Xưởng lọc dầu.</li><li>Đánh chiếm công trình bỏ trống.</li><li>Nhặt Hộp tiếp tế khi an toàn.</li><li>Xử lý các tình huống phát sinh theo lệnh chỉ huy.</li></ul></div>
+</section>
 
-<div id="t1" class="card detail">
-<h3>TEAM 1 — Phòng thủ Bắc</h3>
-<ul>
-<li><b>Mục tiêu đầu:</b> Xưởng Lọc Dầu (Bắc) và các công trình phía Bắc được giao.</li>
-<li><b>0–10 phút:</b> Chiếm nhanh, sau đó ưu tiên giữ điểm; không đuổi đối thủ quá xa khỏi công trình.</li>
-<li><b>Khi bị đánh:</b> Báo vị trí và số lượng, giữ công trình và chờ Team 5/đội hỗ trợ.</li>
-<li><b>Sau phút 10:</b> Chỉ chuyển quân khi có lệnh; có thể hỗ trợ khu trung tâm nếu phía Bắc đã an toàn.</li>
-<li><b>Nguyên tắc:</b> Team 1 là lực lượng giữ điểm, không tự biến thành đội truy kích.</li>
-</ul>
-</div>
-
-<div id="t2" class="card detail">
-<h3>TEAM 2 — Phòng thủ Nam / hỗ trợ</h3>
-<ul>
-<li><b>Mục tiêu đầu:</b> Các Bệnh Viện phía Nam/Đông và Xưởng Lọc Dầu (Nam) theo phân công.</li>
-<li><b>0–10 phút:</b> Giữ tuyến ngoài, bảo đảm đồng đội có điểm hồi phục và đường tiếp viện.</li>
-<li><b>Khi có điểm nóng:</b> Ưu tiên tiếp viện công trình đang có nguy cơ mất hơn là đánh mục tiêu phụ.</li>
-<li><b>Sau phút 10:</b> Giữ các điểm đã chiếm và chỉ điều quân vào trung tâm khi chỉ huy gọi.</li>
-<li><b>Nguyên tắc:</b> Không bỏ trống tuyến phòng thủ chỉ để tranh một cuộc giao tranh nhỏ.</li>
-</ul>
-</div>
-
-<div id="t3" class="card detail">
-<h3>TEAM 3 — Tấn công chủ lực</h3>
-<ul>
-<li><b>Mục tiêu đầu:</b> Trung Tâm Khoa Học và Xưởng Lọc Dầu (Bắc) theo lệnh.</li>
-<li><b>0–10 phút:</b> Đánh tập trung, chiếm nhanh mục tiêu rồi giữ quân ở khu vực để sẵn sàng phản công.</li>
-<li><b>Từ phút 10:</b> Chuyển trọng tâm vào khu trung tâm, ưu tiên Hầm Tên Lửa Hạt Nhân / Kho Vũ Khí khi được chỉ định.</li>
-<li><b>Phối hợp:</b> Không tách thành nhiều nhóm nhỏ; phối hợp với Team 4 để tạo áp lực cùng lúc.</li>
-<li><b>Nguyên tắc:</b> Mục tiêu là chiếm và giữ công trình, không phải số lần hạ quân đối thủ.</li>
-</ul>
-</div>
-
-<div id="t4" class="card detail">
-<h3>TEAM 4 — Tấn công chủ lực</h3>
-<ul>
-<li><b>Mục tiêu đầu:</b> Xưởng Lọc Dầu (khu vực được giao) và Trung Tâm Chỉ Huy/ Nhà Máy Lính Thuê theo lệnh điều phối.</li>
-<li><b>0–10 phút:</b> Tạo áp lực ở cánh được giao, chiếm công trình và duy trì lực lượng.</li>
-<li><b>Từ phút 10:</b> Phối hợp với Team 3 đánh các mục tiêu trung tâm như Nhà Máy Lính Thuê, Kho Vũ Khí hoặc Hầm Tên Lửa Hạt Nhân theo lệnh.</li>
-<li><b>Khi đã chiếm:</b> Chuyển ngay từ tư thế tấn công sang giữ điểm nếu chỉ huy yêu cầu.</li>
-<li><b>Nguyên tắc:</b> Không tự đổi mục tiêu chỉ vì thấy đối thủ yếu hơn ở vị trí khác.</li>
-</ul>
-</div>
-
-<div id="t5" class="card detail">
-<h3>TEAM 5 — Cơ động / tiếp viện</h3>
-<ul>
-<li><b>Nhiệm vụ chính:</b> Là lực lượng phản ứng nhanh, di chuyển đến nơi đang bị ép hoặc có nguy cơ mất công trình.</li>
-<li><b>0–10 phút:</b> Ưu tiên hỗ trợ các điểm quan trọng của Team 1–4; không tranh mục tiêu riêng.</li>
-<li><b>Từ phút 10:</b> Có thể hỗ trợ Hầm Tên Lửa Hạt Nhân, Kho Vũ Khí hoặc Nhà Máy Lính Thuê khi được gọi.</li>
-<li><b>Khi không có điểm nóng:</b> Làm nhiệm vụ phụ/tài nguyên an toàn, nhưng phải sẵn sàng quay lại ngay khi có lệnh.</li>
-<li><b>Nguyên tắc:</b> Team 5 không cố định một công trình; nhiệm vụ là cứu điểm và lấp khoảng trống.</li>
-</ul>
-</div>
-
+<section id="combat">
+<h2>⚔️ QUY TẮC CHIẾN ĐẤU</h2>
 <div class="card">
-<h3>🔔 Cách phối hợp cả 5 Team</h3>
 <ul>
-<li><b>Trước trận:</b> Tất cả vào đúng Team và đứng gần khu vực xuất phát được giao.</li>
-<li><b>0–10 phút:</b> Team 1–2 giữ tuyến ngoài; Team 3–4 chiếm mục tiêu tấn công; Team 5 cơ động.</li>
-<li><b>Phút 10 trở đi:</b> Trung tâm mở → Team 3–4 là lực lượng đánh chính, Team 5 tiếp viện, Team 1–2 giữ tuyến ngoài.</li>
-<li><b>5 phút cuối:</b> Hạn chế di chuyển không cần thiết. Công trình đang có điểm quan trọng hơn một trận đánh lẻ.</li>
-<li><b>Khi có lệnh:</b> Lệnh chỉ huy mới nhất được ưu tiên; không tự ý quay lại mục tiêu cũ.</li>
+<li>Không tự ý dịch chuyển và tấn công khi chưa kiểm tra tình hình.</li>
+<li>Trước khi tấn công, phải xem xét công trình có quan trọng không, có đồng đội hỗ trợ không và sau khi chiếm có giữ được không.</li>
+<li>Mục tiêu là chiếm và giữ công trình, không chỉ giành chiến thắng cá nhân.</li>
+<li>Sử dụng dịch chuyển tức thời để đến đúng khu vực cần hỗ trợ, tránh mất thời gian di chuyển.</li>
+<li>Không quá lo lắng về tổn thất quân trong sự kiện, nhưng phải đánh có tổ chức và tận dụng Bệnh viện dã chiến.</li>
+<li>Không tự ý mở hàng loạt cuộc tập kích làm phân tán lực lượng.</li>
+<li>Không đứng yên hoặc rời trận khi vẫn còn nhiệm vụ.</li>
 </ul>
 </div>
 </section>
 
-<section id="buildings">
-<h2>🏢 Công trình</h2>
-<div class="buildings">
-<button class="building" onclick="building('Xưởng Lọc Dầu (Bắc)','Mục tiêu vòng ngoài. Ưu tiên chiếm sớm và duy trì quyền kiểm soát để tạo điểm ổn định.')">Xưởng Lọc Dầu (Bắc)</button>
-<button class="building" onclick="building('Kho Vũ Khí','Công trình khu trung tâm phía Bắc. Khi mở, lực lượng tấn công tập trung theo lệnh chỉ huy.')">Kho Vũ Khí</button>
-<button class="building" onclick="building('Bệnh Viện (Bắc Đông)','Điểm hỗ trợ phía Bắc Đông. Giữ và bảo vệ khi được phân công.')">Bệnh Viện (Bắc Đông)</button>
-<button class="building" onclick="building('Trung Tâm Khoa Học','Mục tiêu quan trọng của giai đoạn đầu. Chiếm nhanh, giữ liên tục và báo ngay nếu bị phản công.')">Trung Tâm Khoa Học</button>
-<button class="building" onclick="building('Bệnh Viện (Đông)','Điểm phòng thủ phía Đông. Ưu tiên giữ vị trí và tiếp viện khi cần.')">Bệnh Viện (Đông)</button>
-<button class="building" onclick="building('Hầm Tên Lửa Hạt Nhân','Mục tiêu trung tâm. Khi mở, ưu tiên lực lượng mạnh và khả năng tiếp viện liên tục.')">Hầm Tên Lửa Hạt Nhân</button>
-<button class="building" onclick="building('Bệnh Viện (Tây Nam)','Điểm phòng thủ phía Tây Nam. Không tự ý bỏ vị trí.')">Bệnh Viện (Tây Nam)</button>
-<button class="building" onclick="building('Bệnh Viện (Nam Tây)','Điểm hỗ trợ phía Nam Tây. Duy trì phòng thủ và hỗ trợ đồng đội.')">Bệnh Viện (Nam Tây)</button>
-<button class="building" onclick="building('Nhà Máy Lính Thuê','Mục tiêu tấn công phía Nam. Tập trung đánh theo lệnh, sau khi chiếm ưu tiên giữ điểm.')">Nhà Máy Lính Thuê</button>
-<button class="building" onclick="building('Trung Tâm Chỉ Huy','Công trình phía Nam Đông. Thực hiện theo điều phối của chỉ huy.')">Trung Tâm Chỉ Huy</button>
-<button class="building" onclick="building('Xưởng Lọc Dầu (Nam)','Mục tiêu vòng ngoài phía Nam. Chiếm và giữ khi được phân công.')">Xưởng Lọc Dầu (Nam)</button>
-</div>
-<div id="buildingDetail" class="card detail"></div>
+<section id="commands">
+<h2>📢 CÂU LỆNH LIÊN LẠC MẪU</h2>
+<p class="muted">Tin nhắn phải ngắn, rõ ràng và nêu cụ thể địa điểm:</p>
+<div class="command">🔴 Giếng hạt nhân bị đánh – cần hỗ trợ ngay.</div>
+<div class="command">🟢 Xưởng lọc dầu bên trái đang trống – Nhóm 3 chiếm.</div>
+<div class="command">🔴 Địch tập trung 5 đội ở Bệnh viện dã chiến.</div>
+<div class="command">🟡 Xưởng vũ khí đã mở – chuyển lực lượng sang khu trung tâm.</div>
+<div class="command">🔵 Không cần thêm quân ở Giếng hạt nhân – giữ vị trí.</div>
+<div class="command">🟠 Nhóm 5 cơ động đến hỗ trợ Xưởng lọc dầu phía phải.</div>
+<div class="command">🟣 Công trình đã chiếm – chuyển sang phòng thủ.</div>
+<div class="command">⚠️ Không truy đuổi – giữ công trình và chờ lệnh.</div>
 </section>
 
 <section id="rules">
-<h2>📌 Quy tắc bắt buộc</h2>
+<h2>🚨 QUY TẮC BẮT BUỘC</h2>
 <div class="card">
-<div class="rule"><span>✓</span><div>Luôn đi đúng Team và mục tiêu được phân công.</div></div>
-<div class="rule"><span>✓</span><div>Không tự ý đổi mục tiêu hoặc rời công trình khi chưa có lệnh.</div></div>
-<div class="rule"><span>✓</span><div>Ưu tiên <b>chiếm và giữ công trình</b> hơn là đuổi theo một đội quân nhỏ.</div></div>
-<div class="rule"><span>✓</span><div>Bị tấn công hoặc phát hiện điểm nóng → báo ngay cho Team/chỉ huy.</div></div>
-<div class="rule"><span>✓</span><div>Người lực chiến thấp ưu tiên tiếp viện, hỗ trợ và nhiệm vụ an toàn.</div></div>
-<div class="rule"><span>✓</span><div>Trong 5 phút cuối, đặc biệt hạn chế di chuyển vô ích: giữ điểm và nghe lệnh.</div></div>
+<ol>
+<li>Không tự ý tách nhóm.</li>
+<li>Không tự ý tranh mục tiêu khác khi chỉ huy đã ra lệnh.</li>
+<li>Luôn quan sát bản đồ.</li>
+<li>Báo ngay khi công trình bị tấn công, địch tập trung quân hoặc đồng đội cần hỗ trợ.</li>
+<li>Giữ công trình quan trọng quan trọng hơn việc truy đuổi quân địch.</li>
+<li>Người có lực chiến thấp tập trung phòng thủ, nhặt Hộp tiếp tế và thu thập Giếng dầu.</li>
+<li>Người có lực chiến cao ưu tiên Giếng hạt nhân và các công trình trung tâm.</li>
+<li>Mọi người phối hợp theo nhóm và chờ lệnh trước khi đổi mục tiêu.</li>
+</ol>
 </div>
 </section>
-</main>
-<footer>TTYN - SV 2308 • BÃO SA MẠC • Một liên minh — Một mục tiêu — Một chiến thắng</footer>
 
+<section>
+<h2>📌 NHỚ KỸ</h2>
+<div class="card quote">Chiếm nhà – giữ nhà – hỗ trợ đồng đội – nghe chỉ huy.</div>
+<div class="card"><p>Giếng hạt nhân là mục tiêu trọng tâm khi khu trung tâm mở. Người có lực chiến cao tranh các công trình lớn; người có lực chiến trung bình giữ công trình; người có lực chiến thấp hỗ trợ, nhặt Hộp tiếp tế và thu thập Giếng dầu.</p><p><b>20 người phối hợp đúng nhiệm vụ sẽ mạnh hơn 20 người đánh riêng lẻ.</b></p></div>
+</section>
+</main>
+<footer>TTYN - SV 2308 • BÃO SA MẠC</footer>
 <script>
 function team(el,id){
  document.querySelectorAll('.team').forEach(x=>x.classList.remove('active'));
  document.querySelectorAll('.detail').forEach(x=>x.classList.remove('show'));
- el.classList.add('active'); document.getElementById(id).classList.add('show');
- document.getElementById(id).scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-function building(title,text){
- const d=document.getElementById('buildingDetail');
- d.innerHTML='<h3>'+title+'</h3><p>'+text+'</p>';
- d.classList.add('show'); d.scrollIntoView({behavior:'smooth',block:'nearest'});
+ el.classList.add('active');
+ const d=document.getElementById(id); d.classList.add('show');
+ d.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 </script>
 </body></html>
